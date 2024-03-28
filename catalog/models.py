@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import User
 
 NULLABLE = {'blank': True, 'null': True}
 
@@ -27,7 +28,6 @@ class Product(models.Model):
     price = models.IntegerField(verbose_name='Цена за покупку', help_text='Стоимость товара')
     created_at = models.DateField(verbose_name='Дата создания (записи в БД)', auto_now_add=True, **NULLABLE)
     updated_at = models.DateField(verbose_name='Дата последнего изменения (записи в БД)', auto_now=True, **NULLABLE)
-    from users.models import User
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, verbose_name='Пользователь',
                               help_text='Укажите пользователя', **NULLABLE)
     #is_published = models.BooleanField(default=False, verbose_name='Опубликован')
@@ -68,7 +68,6 @@ class Blog(models.Model):
 
 class Version(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Продукт')
-
     number = models.FloatField(verbose_name='Номер версии', help_text='Укажите номер версии')
     name = models.CharField(max_length=100, verbose_name='Название версии', **NULLABLE)
     working_ver = models.BooleanField(verbose_name='Признак версии', **NULLABLE,
