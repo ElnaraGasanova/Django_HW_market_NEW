@@ -30,6 +30,7 @@ class Product(models.Model):
     from users.models import User
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, verbose_name='Пользователь',
                               help_text='Укажите пользователя', **NULLABLE)
+    #is_published = models.BooleanField(default=False, verbose_name='Опубликован')
     #manufactured_at = models.DateField(verbose_name='Дата производства продукта', auto_now=True, **NULLABLE)
     #view_counter = models.PositiveIntegerField(verbose_name='Счетчик просмотров',
                                                #help_text='Укажите кол-во просмотров', default=0)
