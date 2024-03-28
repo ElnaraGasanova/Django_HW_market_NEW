@@ -1,0 +1,808 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Овощи и Фрукты",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-02-13T10:21:16.837Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Готовая еда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-02-13T10:21:56.030Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Сладости и десерты.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-02-13T10:23:15.773Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Чай и Кофе",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-02-13T10:23:30.636Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Товары для животных",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-02-13T10:26:23.989Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Ананас медовый",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-02-13T10:28:21.531Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Виноград измирский б/к",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-02-13T10:30:14.471Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Ассорти Бакинское (томаты, огурцы)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-02-13T10:32:15.285Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Биточки из курицы и капусты",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-02-13T10:34:04.076Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Блины с «Крем чиз» и вишней",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-02-13T10:36:24.476Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Ассорти эклеров «Манго, Сырный, Лесные ягоды»",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-02-13T10:38:15.497Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "«Ромовая баба с вишней и крем-чиз»",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-02-13T10:40:30.490Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Корм влажный для взрослых кошек «Паштет с лососем»",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-02-13T10:42:59.768Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Корм сухой для взр.собак крупных пород с курицей",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-02-13T10:45:26.948Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Кофе «Arabica Solo» жареный в зернах FRESCO",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-02-13T10:47:21.868Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Горный чабрец",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Продукт",
+      "content_type": 7,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Продукт",
+      "content_type": 7,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Продукт",
+      "content_type": 7,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Продукт",
+      "content_type": 7,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 8,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 8,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 8,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 8,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$3pMI80QlNsRh0lDueeTD53$Uvg8vhlPfAmsz1zQ7ArA47VJybkT9mJuhq2RudTkRlk=",
+      "last_login": "2024-02-12T22:19:49.094Z",
+      "is_superuser": true,
+      "username": "elnara",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-02-12T22:18:36.972Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$og4XhAXNt2JLlgdDA3u7eA$0s5mu2Yeq5pccbAA5Uvdf5Ca8FNFfixg+TkzBZJh71Y=",
+      "last_login": "2024-02-12T22:35:55.661Z",
+      "is_superuser": true,
+      "username": "elnara2",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-02-12T22:34:35.605Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "56kg3n1xrtmdrlqa7n7l922v07cs4x2f",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGll45S8lPWew1t41DiBbipMq4u4QKQW0b2beJiKuS43r4DlOJC4CxOl3S5if3HZAD2z3LnNvyzwluSvyoEPeOvHrerh_BxVH_dYlsQE0KljQIRu0JVB2pI0DRdYExb4Ub3NyzisgQ0lrKiqAZn9GRPH-AOdDOBk:1rZeu3:tNaZm1s27Km2dut-wMvGz1sKX4ql9l2AV35_JQmp4oM",
+      "expire_date": "2024-02-26T22:35:55.661Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Овощи и Фрукты",
+      "description": "В этой категории отображаются овощи, фрукты, ягоды, зелень."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Готовая еда",
+      "description": "Быстро, удобно, вкусно."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Сладости и десерты.",
+      "description": "Для поднятия настроения иногда можно )))"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Чай и Кофе",
+      "description": "А вы что предпочитаете? )))"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+      "name": "Товары для животных",
+      "description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name": "Бакалея",
+      "description": "крупы и мука"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Ананас медовый",
+      "description": "Собран вручную, как только созрел!\r\nАнанас - настоящий коктейль фруктовых, тропических, насыщенных вкусов и ароматов.\r\nМы выбрали именно этот ананас за насыщенно сладкий вкус, будоражащий аромат и приятную текстуру, без навязчивой волокнистости.\r\nСрок годности 60 суток.",
+      "image": "prod_images/Ананас.webp",
+      "category": 1,
+      "price": 350,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Виноград измирский б/к",
+      "description": "Освежающе-сладкий, сочный и без косточек. Виноград отлично дополнит салаты с курицей и индейкой, канапе с сыром и тарталетки с паштетом.\r\nГоден 21 суток.\r\nВес 500г.",
+      "image": "",
+      "category": 1,
+      "price": 640,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Ассорти Бакинское (томаты, огурцы)",
+      "description": "Легендарные овощи из солнечного Баку. Небольшие, с тонкой розовой кожицей и сочной, сладкой мякотью. Хрустящие, нежные и ароматные огурцы. Ассорти для самого аппетитного и легкого летнего салата.\r\nГоден 21 сутки.\r\nВес 450г.",
+      "image": "prod_images/Ассорти_огурцы_и_помидоры.webp",
+      "category": 1,
+      "price": 440,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Биточки из курицы и капусты",
+      "description": "Большая порция сочных биточков из курицы и белокочанной капусты. Добавьте любимый гарнир или овощной салат — и сытный обед для всей семьи готов!\r\nГоден 4 суток.\r\nПищевая и энергетическая ценность в 100 г.:\r\nбелки 13,8 г; жиры 4,8 г; углеводы 4,9 г; 118 ккал.\r\nВес 480г.",
+      "image": "prod_images/Биточки.webp",
+      "category": 2,
+      "price": 450,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Блины с «Крем чиз» и вишней",
+      "description": "Десертные блинчики с начинкой из творожного сыра и вишней. Нежные, лёгкие, умеренно сладкие, с приятной ягодной кислинкой. Идеально подходят для завтрака.\r\nГоден 4 суток.\r\nПищевая и энергетическая ценность в 100 г.:\r\nбелки 5,3 г; жиры 14,2 г; углеводы 25,4 г; 250,6 ккал.\r\nВес 140г.",
+      "image": "prod_images/Блинчики.webp",
+      "category": 2,
+      "price": 200,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Ассорти эклеров «Манго, Сырный, Лесные ягоды»",
+      "description": "Классический французский десерт из заварного теста с нетривиальной начинкой. Крем с пюре спелого манго, сладкий сливочный сыр, крем с сочными лесными ягодами — такие начинки мы выбрали для этих воздушных пирожных.\r\nГоден 4 суток.\r\nПищевая и энергетическая ценность в 100 г.:\r\nЭклер «Сырный»: белки 3,1 г; жиры 31,2 г; углеводы 22,6 г; 383,6 ккал Эклер «Манго»: белки 5,2 г; жиры 24,4 г; углеводы 20,1 г; 320,8 ккал Эклер «Лесные ягоды»: белки 5,1 г; жиры 14,8 г; углеводы 20,9. г; 237,2 ккал.\r\nВес 150г.",
+      "image": "prod_images/Эклеры.webp",
+      "category": 3,
+      "price": 290,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "«Ромовая баба с вишней и крем-чиз»",
+      "description": "Бисквитный десерт со творожным сыром и спелой вишней. Вкус десерта покоряет звучание сливочно-ягодных нот, которые органично дополняют нежный вкус теста.\r\nГоден 4 суток.\r\nПищевая и энергетическая ценность в 100 г.:\r\nбелки 5 г; жиры 4,7 г; углеводы 48,5 г; 256,3 ккал.\r\nВес 130г.",
+      "image": "prod_images/Ромовая_баба.webp",
+      "category": 3,
+      "price": 220,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "Корм влажный для взрослых кошек «Паштет с лососем»",
+      "description": "Сбалансированный, сытный и очень аппетитный корм для пушистых питомцев, изготовленный на основе свиных и куриных субпродуктов с добавлением лосося. Не содержит злаковых культур.\r\nГоден 24 месяца.\r\nВес 100г.",
+      "image": "prod_images/Влажный_корм.webp",
+      "category": 5,
+      "price": 125,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "Корм сухой для взр.собак крупных пород с курицей",
+      "description": "Полнорационный сбалансированный корм для любимого четвероногого друга! Подходит собакам возрастом от 12 месяцев и весом от 26 до 44 кг.\r\nВ основе корма — не менее 35% дегидрированного мяса домашней птицы и 33% риса. Кроме того, состав усилен витаминами, минералами, натуральными источниками пробиотиков и Омега-3 жирных кислот.\r\nГоден 18 месяцев.\r\nВес 2,5кг.",
+      "image": "prod_images/Сухой_корм.webp",
+      "category": 5,
+      "price": 1520,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "Кофе «Arabica Solo» жареный в зернах FRESCO",
+      "description": "Ароматный бленд южноафриканских сортов арабики. У кофе средне-тёмная обжарка и яркий вкус с малозаметной кислинкой.\r\nГоден 18 месяцев.\r\nВес 1кг.",
+      "image": "prod_images/Кофе.webp",
+      "category": 4,
+      "price": 1620,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "Горный чабрец",
+      "description": "Горный чабрец обладает насыщенным пряным ароматом и ярким вкусом. Чай с чабрецом поможет снять усталость, взбодрит и придаст сил. Рекомендуется при частых стрессах и бессоннице.\r\nГоден 2 года.\r\nВес 40г.",
+      "image": "prod_images/Чай.webp",
+      "category": 4,
+      "price": 150,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name": "Рис",
+      "description": "Не слипается при варке",
+      "image": "",
+      "category": null,
+      "price": 120,
+      "created_at": "2024-02-13",
+      "updated_at": "2024-02-13"
+    }
+  }
+]
