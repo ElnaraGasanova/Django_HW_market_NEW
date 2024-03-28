@@ -5,6 +5,7 @@ from django.utils.text import slugify
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from catalog.forms import ProductForm, VersionForm
 from catalog.models import Product, Blog, Version
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # Контроллер CBV
@@ -44,14 +45,22 @@ class ProductDetailView(DetailView):
         return context
 
 
-class ProductCreateView(CreateView):
+#Закрываем контроллеры от анонимных пользователей (LoginRequiredMixin)
+class ProductCreateView(LoginRequiredMixin, CreateView):
     '''Класс создания нов.продукта.'''
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy('catalog:home')
 
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+        return super().form_valid(form)
 
-class ProductUpdateView(UpdateView):
+
+#Закрываем контроллеры от анонимных пользователей (LoginRequiredMixin)
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     '''Класс редактирования данных продукта.'''
     model = Product
     form_class = ProductForm
@@ -93,7 +102,8 @@ def toggle_working_ver(request, pk):
     return redirect(reverse('catalog:home'))
 
 
-class ProductDeleteView(DeleteView):
+#Закрываем контроллеры от анонимных пользователей (LoginRequiredMixin)
+class ProductDeleteView(LoginRequiredMixin, DeleteView):
     '''Класс удаления продукта.'''
     model = Product
     success_url = reverse_lazy('catalog:home')

@@ -1,7 +1,5 @@
 import random
-from django.contrib.auth.hashers import make_password
 from django.contrib.auth.views import PasswordResetView
-from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse
 from django.views.generic import CreateView, TemplateView
