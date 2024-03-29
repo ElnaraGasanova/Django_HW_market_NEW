@@ -30,7 +30,7 @@ class Product(models.Model):
     updated_at = models.DateField(verbose_name='Дата последнего изменения (записи в БД)', auto_now=True, **NULLABLE)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, verbose_name='Пользователь',
                               help_text='Укажите пользователя', **NULLABLE)
-    #is_published = models.BooleanField(default=False, verbose_name='Опубликован')
+    is_published = models.BooleanField(default=False, verbose_name='Опубликован')
     #manufactured_at = models.DateField(verbose_name='Дата производства продукта', auto_now=True, **NULLABLE)
     #view_counter = models.PositiveIntegerField(verbose_name='Счетчик просмотров',
                                                #help_text='Укажите кол-во просмотров', default=0)
@@ -39,10 +39,15 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
         ordering = ['name',]
+        permissions = [
+            ('cancel_publication', 'Can cancel publication'),
+            ('change_description', 'Can change description'),
+            ('change_category', 'Can change category'),
+        ]
 
     def __str__(self):
         '''Добавляем строковое отображение'''
-        return f' {self.name}'
+        return f' {self.name} ({self.category})'
 
 
 class Blog(models.Model):
