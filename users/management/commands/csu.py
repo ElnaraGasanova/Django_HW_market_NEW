@@ -18,4 +18,4 @@ class Command(BaseCommand):
 
 #авториз.пользователь
 #skypro.msk@yandex.ru
-#Test@147
+#94573688
