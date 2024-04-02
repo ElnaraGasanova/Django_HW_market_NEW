@@ -6,27 +6,31 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from catalog.forms import ProductForm, VersionForm
 from catalog.models import Product, Blog, Version
 from django.contrib.auth.mixins import LoginRequiredMixin
+from services import get_products_from_cache
 
 
 # Контроллер CBV
 class HomeView(ListView):
     '''Класс вывода всех продуктов.'''
     model = Product
-    template_name = 'product_list.html'
+    #template_name = 'product_list.html'
 
-    def get_queryset(self, *args, **kwargs):
-        queryset = super().get_queryset(*args, **kwargs)
-        return queryset
+def get_queryset(self):
+    return get_products_from_cache()
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        products = self.get_queryset()
+    # def get_queryset(self, *args, **kwargs):
+    #     queryset = super().get_queryset(*args, **kwargs)
+    #     return queryset
 
-        for product in products:
-            product.versions = Version.objects.filter(product=product)
-            product.version = product.versions.filter(working_ver=True).first()
+def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    products = self.get_queryset()
 
-        return context
+    for product in products:
+        product.versions = Version.objects.filter(product=product)
+        product.version = product.versions.filter(working_ver=True).first()
+
+    return context
 
 
 # Контроллер CBV
