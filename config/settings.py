@@ -1,8 +1,12 @@
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(BASE_DIR / '.env')
 
 SECRET_KEY = 'django-insecure-bg&9$k+k#j1&(3cg)ona-l+t#luh%3%)wh(7*%6=b!1(l@pl^h'
 
@@ -116,10 +120,21 @@ LOGIN_URL = '/users/'
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'skypro.msk@yandex.ru'      #указываем нашу почту
-EMAIL_HOST_PASSWORD = 'mxjeffxkdvyjvmee'        #указываем пароль для ПРИЛОЖЕНИЯ!!! а НЕ почты!!!
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')      #указываем свою yandex почту
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')        #указываем пароль для ПРИЛОЖЕНИЯ!!! а НЕ почты!!!
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+#настройка кеширования
+CACHE_ENABLED = os.getenv('CACHE_ENABLED') == 'True'   #если уст-но False,значит мы раб-ем лок-но и кеш-ть ничего не н.
+
+if CACHE_ENABLED:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": os.getenv('CACHE_LOCATION'),
+        }
+    }
